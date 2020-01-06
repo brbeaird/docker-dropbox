@@ -92,4 +92,4 @@ echo "Startup script done!!"
 #while kill -0 ${DROPBOX_PID} 2> /dev/null; do
   #gosu dropbox dropbox status
   #sleep 1
-done
+#done
