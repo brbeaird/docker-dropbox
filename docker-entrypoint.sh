@@ -75,11 +75,11 @@ if [[ -z "$DROPBOX_SKIP_UPDATE" ]]; then
 fi
 
 echo ""
-umask 002
+#umask 002
 
 echo "Patching dropbox_start.py for updated dropboxd path"
-sed -i "s:~/.dropbox-dist/dropboxd:/opt/dropbox/bin/dropboxd:g" /opt/dropbox-filesystem-fix/dropbox_start.py
-sed -i "s:/usr/bin/python:$(which python3):g" /opt/dropbox-filesystem-fix/dropbox_start.py
+#sed -i "s:~/.dropbox-dist/dropboxd:/opt/dropbox/bin/dropboxd:g" /opt/dropbox-filesystem-fix/dropbox_start.py
+#sed -i "s:/usr/bin/python:$(which python3):g" /opt/dropbox-filesystem-fix/dropbox_start.py
 
 echo "Startup script done!!"
 
